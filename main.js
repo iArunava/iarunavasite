@@ -1,5 +1,6 @@
 const expblock = document.getElementById("experienceblock");
 const workblock = document.getElementById("workblock");
+const talkblock = document.getElementById("talkblock");
 
 experiences = [
 'Software Engg, Aviso AI', 
@@ -85,7 +86,6 @@ worksnap = [
 "flappydragon_thumb2.png"
 ]
 
-
 for (var i = 0; i < experiences.length; i++) {
    htmltoinsert="<h5 class='expname'><strong>" + experiences[i] + "</strong></h5>"
    htmltoinsert+="<strong><small class='text-muted'> " + expduration[i] + " </small></strong>"
@@ -116,4 +116,27 @@ for (var i = 0; i < somework.length; i++) {
       htmltoinsert+='<img src="assets/img/'+worksnap[i]+'" alt="" class="workthumbnail">'
    }
    workblock.innerHTML +=htmltoinsert
+}
+
+sometalk=[
+"6-Day Workshop on Full Stack Web Development"
+]
+
+talkaudience=[
+"Bangalore Institure of Technology"
+]
+
+talksnap=[
+"bit6daydec2022_1.jpeg"
+]
+
+for (var i = 0; i < sometalk.length; i++) {
+   htmltoinsert="<h5 class='expname'><strong>" + sometalk[i] + "</strong></h5>"
+   if (talkaudience[i]!== "") {
+      htmltoinsert+="<strong> <p class='text-muted'> "+talkaudience[i]+"</p></strong>"
+   } 
+   if (talksnap[i]!==[]) {
+      htmltoinsert+='<img src="assets/img/'+talksnap[i]+'" alt="" class="workthumbnail">'
+   }
+   talkblock.innerHTML +=htmltoinsert
 }
