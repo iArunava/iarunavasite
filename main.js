@@ -4,7 +4,7 @@ const talkblock = document.getElementById("talkblock");
 
 experiences = [
 'Software Engg, Aviso AI', 
-'Backend Engg, Aviso AI',
+//'Backend Engg, Aviso AI',
 "Founding Engg #1, Ecocrumb (techstars '21)",
 "Co-Founder, Attim",
 "Research Intern, Microsoft Research",
@@ -14,7 +14,7 @@ experiences = [
 
 expduration = [
 'Jan 2023 - Present',
-'Dec 2022 - Jan 2023',
+//'Dec 2022 - Jan 2023',
 'Nov 2021 - Nov 2022',
 'Sep 2020 - Nov 2021',
 'Jul 2019 - Aug 2019',
@@ -28,8 +28,8 @@ expdesp = [
 "Collaborated with different teams to move tickets to production.",
 "Programmed multiple bash and python scripts for automation based on requirements."],
 
-["Worked towards updating the search infrastructure entirely to optimize and get to almost real-time chat indexing in the app using Telegram APIs.",
-"Worked with Python based asynchronous programming using asyncio/asyncpg."],
+//["Worked towards updating the search infrastructure entirely to optimize and get to almost real-time chat indexing in the app using Telegram APIs.",
+//"Worked with Python based asynchronous programming using asyncio/asyncpg."],
 
 [
 "First employee and helped build a usable product which helped acquire the first F500 paying customer.",
