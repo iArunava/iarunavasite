@@ -9,7 +9,7 @@ experiences = [
 "Co-Founder, Attim",
 "Research Intern, Microsoft Research",
 "Computer Vision Intern, OpenCV",
-"Data Science Intern, Datamatica",
+//"Data Science Intern, Datamatica",
 ]
 
 expduration = [
@@ -18,8 +18,9 @@ expduration = [
 'Nov 2021 - Nov 2022',
 'Sep 2020 - Nov 2021',
 'Jul 2019 - Aug 2019',
-'May 2019 - Jul 2019',
-'Feb 2019 - March 2019',
+'Feb 2019 - Jul 2019',
+//'May 2019 - Jul 2019',
+//'Feb 2019 - March 2019',
 ]
 
 expdesp = [
@@ -61,13 +62,16 @@ expdesp = [
 [
 "Worked with the team in building articles that helps spread awareness and helps newbies getting into the field of computer vision get their feet wet.,",
 "Link: https://learnopencv.com/pytorch-for-beginners-semantic-segmentation-using-torchvision/",
-"Worked in creating content and code for course content for the 3 major courses that was released by OpenCV in the year 2021."
-],
-[
+"Worked in creating content and code for course content for the 3 major courses that was released by OpenCV in the year 2021.",
 "Worked on Projects focused on Segmentation",
 "Reproduced a paper to solve a business problem by Semantic Segmentation.",
 "Used EAST for text Detection on Articles.",
 ],
+//[
+//"Worked on Projects focused on Segmentation",
+//"Reproduced a paper to solve a business problem by Semantic Segmentation.",
+//"Used EAST for text Detection on Articles.",
+//],
 ]
 
 somework=[
