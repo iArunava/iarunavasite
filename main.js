@@ -25,6 +25,7 @@ expduration = [
 
 expdesp = [
 ["Working on fixing existing production bugs and customer success. (github.com/arc-aviso)",
+"Implemented feature to help client switch to our platform.",
 "Worked on Mongodb pipelines and Elasticsearch upgrades.",
 "Collaborated with different teams to move tickets to production.",
 "Programmed multiple bash and python scripts for automation based on requirements."],
