@@ -24,6 +24,12 @@
 	height: auto;
 }
 
+.carousel-img img {
+  width: auto;
+  height: 250px;
+  max-height: 250px;
+}
+
 /*
 .fa-twitter {
   background: #55ACEE;

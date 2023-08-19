@@ -145,3 +145,49 @@ for (var i = 0; i < sometalk.length; i++) {
    }
    talkblock.innerHTML +=htmltoinsert
 }
+
+
+/*
+ * ARTICLES
+ *
+ * */
+const articlecarouselindicatorblock = document.getElementById("article-carousel-indicators");
+const articleblock = document.getElementById("article-carousel-inner");
+
+articles = [
+['First Move with Move!', 'http://sharc.attim.in/2023/01/28/hello-move.html', 'assets/img/article_banners/move_header.png'],
+['DeFi - The future of Finance', 'http://sharc.attim.in/2023/01/23/defi.html', 'assets/img/article_banners/defi_article_banner_final2.png'],
+['What is NFT?', 'http://sharc.attim.in/2023/01/14/what-is-nft.html', 'assets/img/article_banners/nftgallery_oncyber_compressed.jpg'],
+['Web3 Gaming: The future of Gaming!', 'http://sharc.attim.in/2023/01/07/web3-gaming.html', 'assets/img/article_banners/web3gaming_header.jpg'],
+]
+
+/*
+							<div class="carousel-item carousel-img active">
+								<img class="d-block w-100" src="assets/img/article_banners/move_header.png" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+									<h5>Web3 Gaming: The future of Gaming!</h5>
+									<a href="http://sharc.attim.in/2023/01/07/web3-gaming.html">Check</a>
+								</div>
+							</div>
+*/
+
+for (var i = 0; i < articles.length; i++) {
+    let nextSlide=i+1;
+    activeClass = ''
+    indicatorHTML = ''
+    if (i==0) {
+      indicatorHTML = 'class="active" aria-current="true"'
+      activeClass = 'active'
+    }
+    indicatorHTML = '<button type="button" data-bs-target="#articleCarousel" data-bs-slide-to="'+i.toString()+'" aria-label="Slide" ' + indicatorHTML + '></button>'
+    articlecarouselindicatorblock.innerHTML += indicatorHTML
+
+    htmltoinsert = ' <div class="carousel-item carousel-img '+activeClass+'">  \
+								<img class="d-block w-100" src="' + articles[i][2] + '" alt="Second slide"> \
+                <div class="carousel-caption d-none d-md-block"> \
+									<h5>' + articles[i][0] + ' </h5> \
+									<a href="' + articles[i][1] + '" target="_blank">Check</a> \
+								</div> \
+							</div>'
+    articleblock.innerHTML += htmltoinsert
+}
