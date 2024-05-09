@@ -135,7 +135,7 @@ for (var i = 0; i < somework.length; i++) {
       htmltoinsert+="<p class='row lead text-muted'> "+workcheck[i][0]+ " <a href='"+workcheck[i][1]+"' target='_blank'> here </a></p>"
    } 
    if (worklinks[i]!== "") {
-      htmltoinsert+="<a class='btn btn-primary' href='"+worklinks[0]+"' target='_blank'> Explore </a>"
+      htmltoinsert+="<a class='btn btn-primary' href='"+worklinks[i]+"' target='_blank'> Explore </a>"
    } 
    workblock.innerHTML +=htmltoinsert + "</div></div></div>"
 }
