@@ -1,5 +1,5 @@
 const expblock = document.getElementById("experienceblock");
-const workblock = document.getElementById("workblock");
+const workblock = document.getElementById("work");
 const talkblock = document.getElementById("talkblock");
 
 experiences = [
@@ -86,22 +86,6 @@ expdesp = [
 //],
 ]
 
-somework=[
-"Flappy Dragon"
-]
-worklinks = [
-"https://github.com/iarunava/flappydragon"
-]
-workcheck = [
-["Play and share your high score! Check ", "http://flappydragon.attim.in/"],
-]
-workdesp = [
-]
-
-worksnap = [
-"flappydragon_thumb2.png"
-]
-
 for (var i = 0; i < experiences.length; i++) {
    htmltoinsert="<h5 class='expname'><strong>" + experiences[i] + "</strong></h5>"
    htmltoinsert+="<strong><small class='text-muted'> " + expduration[i] + " </small></strong>"
@@ -120,18 +104,40 @@ for (var i = 0; i < experiences.length; i++) {
    expblock.innerHTML +=htmltoinsert
 }
 
+
+somework=[
+"Flappy Dragon",
+"Scratch AI",
+]
+worklinks = [
+"https://github.com/iarunava/flappydragon",
+"https://github.com/iarunava/scratchai",
+]
+workcheck = [
+["Play and share your high score! Check ", "http://flappydragon.attim.in/"],
+["Checkout this article shared by the best ML practioners in like @hardmaru. Written by me :) (The Floydhub site has gone down now)", "https://twitter.com/hardmaru/status/1188988884249653248?lang=en"],
+]
+workdesp = [
+]
+
+worksnap = [
+"flappydragon_thumb2.png",
+"scratchai_thumb.png",
+]
+
 for (var i = 0; i < somework.length; i++) {
-   htmltoinsert="<h5 class='expname'><strong>" + somework[i] + "</strong></h5>"
-   if (worklinks[i]!== "") {
-      htmltoinsert+="<small class='text-muted'>Open Sourced <a href='"+worklinks[0]+"' target='_blank'> here </a></small>"
-   } 
-   if (workcheck[i]!== []) {
-      htmltoinsert+="<p class='text-muted'> "+workcheck[i][0]+ " <a href='"+workcheck[i][1]+"' target='_blank'> here </a></p>"
-   } 
+   htmltoinsert="<div class='col-sm-3 d-flex justify-content-center'> <div class='card' style='width: 20rem;'> <img class='card-img-top workimage' src='assets/img/"+worksnap[i]+"' alt='Card image cap'> <div class='card-body'> <h5 class='card-title'>" + somework[i] + "</h5>"
+   //htmltoinsert="<h5 class='expname'><strong>" + somework[i] + "</strong></h5>"
    if (worksnap[i]!==[]) {
-      htmltoinsert+='<img src="assets/img/'+worksnap[i]+'" alt="" class="workthumbnail">'
+      //htmltoinsert+='<img src="assets/img/'+worksnap[i]+'" alt="" class="workthumbnail">'
    }
-   workblock.innerHTML +=htmltoinsert
+   if (workcheck[i]!== []) {
+      htmltoinsert+="<p class='row lead text-muted'> "+workcheck[i][0]+ " <a href='"+workcheck[i][1]+"' target='_blank'> here </a></p>"
+   } 
+   if (worklinks[i]!== "") {
+      htmltoinsert+="<a class='btn btn-primary' href='"+worklinks[0]+"' target='_blank'> Explore </a>"
+   } 
+   workblock.innerHTML +=htmltoinsert + "</div></div></div>"
 }
 
 sometalk=[

@@ -30,6 +30,19 @@
   max-height: 250px;
 }
 
+.workthumbnail {
+  width: auto;
+  height: 250px;
+  max-height: 280px;
+}
+
+.workimage {
+   height: 300px;
+   object-fit: cover;
+}
+
+
+
 /*
 .fa-twitter {
   background: #55ACEE;
