@@ -209,5 +209,36 @@ for (var i = 0; i < articles.length; i++) {
     articleblock.innerHTML += htmltoinsert
 }
 
+/*
+ * CERTIFICATES
+ *
+ * */
+const certificateblock = document.getElementById("certificateblock");
+
+items = [
+['NPTEL - Design and analysis of algorithms', '82/100', 'https://archive.nptel.ac.in/content/noc/NOC17/SEM2/Ecertificates/106/noc17-cs27/Course/NPTEL17CS27S1450979171051878.jpg'],
+['NPTEL - Introduction to algorithms and analysis', '99/100', 'https://archive.nptel.ac.in/content/noc/NOC17/SEM2/Ecertificates/106/noc17-cs20/Course/NPTEL17CS20S2460595171014762.jpg'],
+['NPTEL - Programming in C++', '88/100', 'https://archive.nptel.ac.in/content/noc/NOC17/SEM2/Ecertificates/106/noc17-cs24/Course/NPTEL17CS24S2451065171051878.jpg'],
+['NPTEL - Programming, Data Structures and Algorithms in Python', '78/100', 'https://archive.nptel.ac.in/content/noc/NOC16/SEM2/Ecertificates/106/noc16-cs11/Course/NPTEL16CS1118420252.jpg'],
+['NPTEL - Introduction to Modern Application Development', '80/100', 'https://archive.nptel.ac.in/content/noc/NOC17/SEM1/Ecertificates/106/noc17-cs06/Course/NPTEL17CS0626450558AN.jpg'],
+['NPTEL - Database Management System', '82/100', 'https://archive.nptel.ac.in/content/noc/NOC18/SEM1/Ecertificates/106/noc18-cs15/Course/NPTEL18CS15S35121151810060917.jpg'],
+['NPTEL - Data Science for Engineers', '75/100', 'https://archive.nptel.ac.in/content/noc/NOC18/SEM1/Ecertificates/106/noc18-cs28/Course/NPTEL18CS28S15107361810060917.jpg'],
+['NPTEL - Deep Learning', '72/100', 'https://archive.nptel.ac.in/content/noc/NOC18/SEM2/Ecertificates/106/noc18-cs41/Course/NPTEL18CS41S215202001810170924.jpg'],
+]
+
+
+for (var i = 0; i < items.length; i++) {
+    htmltoinsert = '<div class="accordion-item"> <h2 class="accordion-header"> \
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse' + i.toString() + '" aria-expanded="true" aria-controls="collapse'+i.toString() +'"><strong>' + items[i][0] + '</strong></button> </h2> \
+                    <div id="collapse' + i.toString() + '" class="accordion-collapse collapse" data-bs-parent="#certificateblock"> \
+                     <div class="accordion-body">' + items[i][1]  + ' \
+									<button> <a href="' + items[i][2] + '" target="_blank">Check Certificate</a> </button> \
+                 </div> \
+							</div> </div>'
+    certificateblock.innerHTML += htmltoinsert
+}
+
+
+
 // Make all links open in new tab
 function externalLinks() {   for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {     var b = c[a];     b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")   } } ; externalLinks(); 
