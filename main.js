@@ -3,10 +3,10 @@ const workblock = document.getElementById("work");
 const talkblock = document.getElementById("talkblock");
 
 experiences = [
-'Software Engg, Aviso AI', 
+'Software Engineer, Aviso AI', 
 //'Backend Engg, Aviso AI',
-"Founding Engg #1, Ecocrumb (techstars '21)",
-"Co-Founder, Attim",
+"Founding Engineer #1, Ecocrumb (techstars '21)",
+"Co-Founder/Engineer, Attim",
 "Research Intern, Microsoft Research",
 "Computer Vision Intern, OpenCV",
 //"Data Science Intern, Datamatica",
@@ -87,8 +87,24 @@ expdesp = [
 ]
 
 for (var i = 0; i < experiences.length; i++) {
-   htmltoinsert="<h5 class='expname'><strong>" + experiences[i] + "</strong></h5>"
-   htmltoinsert+="<strong><small class='text-muted'> " + expduration[i] + " </small></strong>"
+    bodyhtml='<span class=""><p>'
+    for (var j=0; j < expdesp[i].length; j++) {
+        bodyhtml+= "· " + expdesp[i][j] + "</br>"
+    }
+    bodyhtml+='</p></span>'
+
+    htmltoinsert = '<div class="accordion-item"> <h2 class="accordion-header"> \
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_exp_' + i.toString() + '" aria-expanded="true" aria-controls="collapse_exp_'+i.toString() +'"><h5 class="expname"><strong>' + experiences[i] + '</strong>  &nbsp;  &nbsp;  &nbsp;</h5><strong><small class="text-muted"> ' + expduration[i] + '  </small></strong> </button> </h2> \
+                    <div id="collapse_exp_' + i.toString() + '" class="accordion-collapse collapse" data-bs-parent="#certificateblock"> \
+                     <div class="accordion-body">' + bodyhtml  + ' \
+									<button class="btn btn-disabled"> <a href="' + '' + '" target="_blank">Learn more</a> </button> \
+                 </div> \
+							</div> </div>'
+
+
+
+   //htmltoinsert="<h5 class='expname'><strong>" + experiences[i] + "</strong></h5>"
+   //htmltoinsert+="<strong><small class='text-muted'> " + expduration[i] + " </small></strong>"
    /*
    htmltoinsert+='<ul class="list-group">'
    for (var j=0; j < expdesp[i].length; j++) {
@@ -96,13 +112,9 @@ for (var i = 0; i < experiences.length; i++) {
    }
    htmltoinsert+='</ul>'
    */
-   htmltoinsert+='<span class=""><p>'
-   for (var j=0; j < expdesp[i].length; j++) {
-       htmltoinsert+= "· " + expdesp[i][j] + "</br>"
-   }
-   htmltoinsert+='</p></span>'
    expblock.innerHTML +=htmltoinsert
 }
+
 
 
 somework=[
@@ -133,7 +145,7 @@ for (var i = 0; i < somework.length; i++) {
    }
    if (workcheck[i]!== []) {
       htmltoinsert+="<p class='row lead text-muted'> "+workcheck[i][0]+ " <a href='"+workcheck[i][1]+"' target='_blank'> here </a></p>"
-   } 
+   }
    if (worklinks[i]!== "") {
       htmltoinsert+="<a class='btn btn-primary' href='"+worklinks[i]+"' target='_blank'> Explore </a>"
    } 
