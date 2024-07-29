@@ -23,6 +23,17 @@ expduration = [
 //'Feb 2019 - March 2019',
 ]
 
+
+skills = {
+'expskills' : [['Git', 'Python', 'Django'],
+['Git', 'Python', 'Django'],
+['Git'],
+['Git'],
+['Git'],
+['Git'],
+['Git']],
+}
+
 expdesp = [
 ["Managing and priotization of tickets for the dev team for completion of Sales Engagement Module.",
 "Implemented Aviso's Browser real-time Call and SMS/Email scheduling.",
@@ -93,12 +104,33 @@ for (var i = 0; i < experiences.length; i++) {
     }
     bodyhtml+='</p></span>'
 
+
+    // Exp skills
+    /**
+    expskills=skills['expskills']
+    skilltags='<div class=""><h5> Technical Skills </h5>'
+    for (var j=0; j < expskills[i].length; j++) {
+        skilltags+= " <button type='button' class='btn btn-primary'> \
+         " +  expskills[i][j] + " <span class='badge badge-light'>0</span> \
+            <span class='sr-only'>unread messages</span> \
+            </button>"
+    }
+    skilltags+='</div>'
+    **/
+    expskills=skills['expskills']
+    skilltags='<div class=""><h5> Technical Skills </h5>'
+    for (var j=0; j < expskills[i].length; j++) {
+        skilltags += '<span class="badge bg-primary"> ' + expskills[i][j] + '</span> &nbsp; '
+    }
+    skilltags+=' </div>'
+
+
     htmltoinsert = '<div class="accordion-item"> <h2 class="accordion-header"> \
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_exp_' + i.toString() + '" aria-expanded="true" aria-controls="collapse_exp_'+i.toString() +'"><h5 class="expname"><strong>' + experiences[i] + '</strong>  &nbsp;  &nbsp;  &nbsp;</h5><strong><small class="text-muted"> ' + expduration[i] + '  </small></strong> </button> </h2> \
                     <div id="collapse_exp_' + i.toString() + '" class="accordion-collapse collapse" data-bs-parent="#certificateblock"> \
                      <div class="accordion-body">' + bodyhtml  + ' \
 									<button class="btn btn-disabled"> <a href="' + '' + '" target="_blank">Learn more</a> </button> \
-                 </div> \
+                  ' + skilltags + ' </div> \
 							</div> </div>'
 
 
