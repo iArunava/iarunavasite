@@ -5,7 +5,7 @@ const talkblock = document.getElementById("talkblock");
 experiences = [
 'Software Engineer, Aviso AI', 
 //'Backend Engg, Aviso AI',
-"Founding Engineer #1, Ecocrumb (techstars '21)",
+"Founding Engineer #1, Ecocrumb (Techstars '21)",
 "Co-Founder/Engineer, Attim",
 "Research Intern, Microsoft Research",
 "Computer Vision Intern, OpenCV",
@@ -17,7 +17,7 @@ expduration = [
 //'Dec 2022 - Jan 2023',
 'Nov 2021 - Dec 2022',
 'Sep 2020 - Nov 2021',
-'Aug 2019 - Aug 2019',
+'Aug 2019 - Aug 2020 &nbsp; [1.1 yrs]',
 'Feb 2019 - Jul 2019',
 //'May 2019 - Jul 2019',
 //'Feb 2019 - March 2019',
@@ -25,8 +25,8 @@ expduration = [
 
 
 skills = {
-'expskills' : [['Git', 'Python', 'Django'],
-['Git', 'Python', 'Django'],
+'expskills' : [['Git', 'Python', 'Django', 'Amazon S3', 'boto3', 'Twilio Integration', 'OAuth', 'Google OAuth', 'Gmail Integration'],
+['Git', 'Python', 'Django', 'Amazon S3'],
 ['Git'],
 ['Git'],
 ['Git'],
