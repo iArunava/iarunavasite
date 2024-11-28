@@ -1,6 +1,7 @@
 const expblock = document.getElementById("experienceblock");
 const workblock = document.getElementById("work");
 const talkblock = document.getElementById("talkblock");
+const skillblock = document.getElementById("skillblock");
 
 experiences = [
 'Software Engineer, Aviso AI', 
@@ -33,6 +34,20 @@ skills = {
 ['Git'],
 ['Git']],
 }
+
+summarydesp = [
+["Spearheaded engineering for Sales Engagement, to deliver a new product within Aviso that is being utilized by internal teams and have fetched multiple paying customers, which has increased revenue for the company by 30% for Sales Engagement enabled customers. Balanced hands-on coding, cross-functional collaboration, and mentorship while ensuring code quality.",
+"Engineered the Interaction Summary REST API, to replace competitors with Aviso and help customers switch to Aviso, processes 1 million+ rows in seconds to deliver interactions data to cusotmers for easy processing.",
+"Engineered Aviso's Actual vs Snapshot view, which enabled customers to insights on how deals have been effected since that quarter / month, which is being utilized by all customers across Aviso."
+]
+,
+[],
+[],
+[],
+[],
+[]
+]
+
 
 expdesp = [
 ["Managing and priotization of tickets for the dev team for completion of Sales Engagement Module.",
@@ -98,7 +113,14 @@ expdesp = [
 ]
 
 for (var i = 0; i < experiences.length; i++) {
-    bodyhtml='<span class=""><p>'
+    bodyhtml='<span><div  class="alert alert-primary" role="alert"><ul>'
+    for (var j=0; j < summarydesp[i].length; j++) {
+        // bodyhtml+= "· " + summarydesp[i][j] + "</br>"
+        bodyhtml+= "<li>" + summarydesp[i][j] + "</li>"
+    }
+    bodyhtml+='</ul></div></span>'
+
+    bodyhtml+='<span class=""><p>'
     for (var j=0; j < expdesp[i].length; j++) {
         bodyhtml+= "· " + expdesp[i][j] + "</br>"
     }
@@ -282,6 +304,33 @@ for (var i = 0; i < items.length; i++) {
     certificateblock.innerHTML += htmltoinsert
 }
 
+
+/*
+ * Skills
+ *
+ * */
+const skill_categories = ["Languages", "Backend", "Technical", "Integrations", "Cloud"]
+skill_details = {
+    "Languages" : ["Bash", "Python", "Java",  "C++", "Javascript", "C"],
+    "Backend" : ["Django", "Django Rest Framework", "Flask", "Docker", "JSON", "Pytest"],
+    "Technical" : ["Data Structures", "Algorithms", "Git", "Selenium", "Computer Vision", "NLP", "Data Analysis", "OpenCV", "PostgreSQL", "MongoDB", "Machine Learning", "Deployment", "Database Management", "Jenkins"],
+    "Cloud" : ["AWS", "AWS S3", "AWS Lambda", "IAM", "AWS Fargate", "Load Balancers", "GCP"],
+    "Integrations" : ["Twilio", "Google OAuth", "Microsoft Graph", "Azure", "Outlook"],
+}
+
+for (var i = 0; i < skill_categories.length; i++) {
+    var section = skill_categories[i];
+    htmltoinsert = '<div><h5> ' + section + ':  </h5> <p>'
+    for (var j = 0; j < skill_details[section].length; j++) {
+        htmltoinsert += skill_details[section][j]
+        if (j!=skill_details[section].length-1) {
+            htmltoinsert+=', '
+        }
+    }
+    htmltoinsert+='</p>'
+    htmltoinsert+='</div>'
+    skillblock.innerHTML += htmltoinsert
+}
 
 
 // Make all links open in new tab
