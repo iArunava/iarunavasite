@@ -7,7 +7,7 @@ experiences = [
 'Software Engineer, Aviso AI', 
 //'Backend Engg, Aviso AI',
 "Founding Engineer #1, Ecocrumb (Techstars '21)",
-"Co-Founder/Engineer, Attim",
+"Founding Engineer, Attim",
 "Research Intern, Microsoft Research",
 "Computer Vision Intern, OpenCV",
 //"Data Science Intern, Datamatica",
