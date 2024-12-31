@@ -1,0 +1,35 @@
+[
+"We worked on about 4-5 ideas pivoting fast and working towards building a successful startup.",
+"Worked on the frontend(Vue) and backend(Flask) of our MLOps Platform ( <a href='https://youtu.be/iVw4MhCJWPA?si=qK7CfANJxCUhDDrA'>Youtube</a> )",
+"Managed a team of 3 engineers who helped in getting us to the MVP stage of the MLOps Platform.",
+"Conceptualizing the workings of an AR Glass [Glass]",
+"Built a robust edge detection algorithm without deep learning that would help the glass understand the world around. ( <a href='https://youtu.be/GB1GXk4pHZ0'>Youtube</a> and <a href='https://youtu.be/6zIVADWK7Sc'> Youtube </a> )",
+"Built other CV Algorithms that are robust and uses traditional CV Algorithms, not Deep Learning. ( <a href='https://youtube.com/shorts/ggIt3XaiSBo'>Youtube</a> )",
+"Worked on a real-time posture detection algorithm Real Time Posture Detection. ( <a href='https://youtu.be/Tew0XWnxhas'> Youtube </a>)",
+"Built a RaspberryPi powered device that can sit in the front of the car and analyze the surroundings in almost real-time. ( <a href='https://youtu.be/RYMiqRZGJ4o'>Demo</a> and <a href='https://youtu.be/2kLVIoAcMBk'>Thermal Camera Demo</a> )",
+"Worked towards a SaaS that analyzes statsical significance of the features of a dataset and returns in increasing order the list of features that effects a certain feature(KPI).",
+"Scraped different kinds of website and PDFs using som basic tools as well as Selenium and tesseract, for data collection.",
+],
+
+
+
+[
+"Worked with the team in building articles that helps spread awareness and helps newbies getting into the field of computer vision get their feet wet.,",
+"Link: https://learnopencv.com/pytorch-for-beginners-semantic-segmentation-using-torchvision/",
+"Worked in creating content and code for course content for the 3 major courses that was released by OpenCV in the year 2021.",
+"Worked on Projects focused on Segmentation",
+"Reproduced a paper to solve a business problem by Semantic Segmentation.",
+"Used EAST for text Detection on Articles.",
+],
+
+
+[
+"First employee and helped build a usable product which helped acquire the first F500 paying customer.",
+"Built the beta version of the Ecocrumb ESG Management software from scratch.",
+"Worked on Frontend (Vue) and Backend (Django)",
+"Complete infrastructure management for the software on AWS.",
+"Scraped ESG standards data from websites, PDFs and Excel Sheets and built relationships out of it, and preparing and cleaning the data for use in the product. Data Engineering practices were used in the process.",
+"Database management (Postgres).",
+"Single handedly built E2E Automated Deployment Pipelines on Github Actions integrated with AWS Fargate.",
+"Worked with Python based asynchronous programming using asyncio/asyncpg for Data consumption pipelines.",
+],
