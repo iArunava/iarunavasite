@@ -76,7 +76,7 @@ expdesp = [
 "Wrote Automation Scripts and Data Pipelines, to scrape required data from 15+ sources including websites, PDFs and Excel Sheets and restructure them into a common format, which enabled customers to fill their ESG Reports across different standards atleast 50% faster."
 ],
 [
-"Designed and Engineered a MLOps platform backend (Flask) and frontend (Vue), leading a team of 3 engineers to achieve MVP delivery which received strong positive feedback from 10+ angel investors and pre-seed funding."
+"Designed and Engineered a MLOps platform backend (Flask) and frontend (Vue), leading a team of 3 engineers to achieve MVP delivery which received strong positive feedback from 10+ angel investors and pre-seed funding.",
 "Built a Raspberry Pi-powered device for real-time environmental analysis in day as well as night using Thermal Camera and prototyped a SaaS platform for statistical feature analysis of datasets.",
 "Designed End-to-End Automated Pipelines for High Quality Video Generation for Youtube utilizing freely available video and audio data on the internet, <strong>reducing video generation times by over a 95%</strong>."
 ],
